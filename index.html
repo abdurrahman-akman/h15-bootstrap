@@ -1,58 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<!-- ! bootstrap stillerini ezebilmek için css linki en sonda olmalı-->
-    <link rel="stylesheet" href="./css/app.css">
-</head>
-<body>
-   
+    <!-- ! bootstrap stillerini ezebilmek için css linki en sonda olmalı-->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
     <!--*** NAVBAR*****-->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/CLARUSWAY_LOGO.png" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#index">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
+    <nav class="navbar navbar-expand-md w-75">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="w-50"
+            src="./img/medicine-high-resolution-color-logo.png"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#index"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#students">Students</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Students</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#courses">Courses</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              
-              
-             
-            </ul>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- *******CAROUSEL ******* -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/medicine-high-resolution-color-logo.png"
+            class="d-block w-75"
+            alt="img1"
+          />
+          <div class="carousel-caption d-none d-sm-block">
+            <div>
+              <button class="btn btn-success">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
           </div>
         </div>
-      </nav>
+        <div class="carousel-item">
+          <img src="./img/slider3.jpg" class="d-block w-100" alt="img2" />
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>My Dream Life</h5>
+
+            <div>
+              <button class="btn btn-success">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/pill-g9edb0e42f_1280.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Alternative Medicine</h5>
+
+            <div>
+              <button class="btn btn-success">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--* ABOUT  -->
+    <main class="text-center">
+      <section id="about" class="container bg-light p-3">
+        <h2 class="text-success display-6">ABOUT US</h2>
+
+        <div class="row justify-content-center">
+          <!--?icon büyüklüğünü fa-x özelliği ile ayarlayabiliriz -->
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <i class="fas fa-globe-americas fa-3x"></i>
+            <h4>full time support</h4>
+            <p>
+              While alternative medicine approaches can vary in terms of their
+              effectiveness and scientific support, there are some practices
+              that have shown promise and are considered useful by many
+              individuals.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <i class="fas fas fa-person-cane fa-3x"></i>
+            <h4>Learn Yourself</h4>
+            <p>
+              The World Health Organization defines health as a condition of
+              complete mental, physical, and social well-being, rather than only
+              the absence of sickness and disability..
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <i class="fas fa-hand-holding-heart fa-3x"></i>
+            <h4>Healthy</h4>
+            <p>
+              A healthy lifestyle is important for everyone. When we look after
+              our physical health, we feel better too fitter, more relaxed and
+              better able to cope with things.
+            </p>
+          </div>
+        </div>
+      </section>
+<!--******INSTRUCTORS******-->
+      <section id="instructors" class="container bg-dark p-3">
+        <h2 class="text-success display-6">OUR INSTRUCTORS</h2>
+
+          <div class="row g-3 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card h-100">
+              <img
+                src="./img/WhatsApp Görsel 2023-06-08 saat 12.03.57.jpg"
+                class="card-img-top"
+                alt="teacher1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dr.Sezgin DEMİR</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                <div class="d-flex fa-2x justify-content-around">
+                  <i class="fa-brands fa-facebook-square"></i>
+                  <i class="fa-brands fa-instagram-square"></i>
+                  <i class="fa-brands fa-twitter-square"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card h-100">
+                <img
+                  src="./img/teacher2.jpg"
+                  class="card-img-top"
+                  alt="teacher1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bob Ken</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                  <div class="d-flex fa-2x justify-content-around">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+  
+            </div> <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card h-100">
+                  <img
+                    src="./img/teacher3.jpg"
+                    class="card-img-top"
+                    alt="teacher1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Jessica Sunny</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                    <div class="d-flex fa-2x justify-content-around">
+                      <i class="fa-brands fa-facebook-square"></i>
+                      <i class="fa-brands fa-instagram-square"></i>
+                      <i class="fa-brands fa-twitter-square"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                  </div>
+                </div>
+    
+              </div> <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card h-100">
+                    <img
+                      src="./img/teacher4.jpg"
+                      class="card-img-top"
+                      alt="teacher1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jonny Came</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                      <div class="d-flex fa-2x justify-content-around">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div> <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                  <div class="card h-100">
+                      <img
+                        src="./img/teacher5.jpg"
+                        class="card-img-top"
+                        alt="teacher1"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Osho</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                        <div class="d-flex fa-2x justify-content-around">
+                          <i class="fa-brands fa-facebook-square"></i>
+                          <i class="fa-brands fa-instagram-square"></i>
+                          <i class="fa-brands fa-twitter-square"></i>
+                          <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </div> <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card h-100">
+                        <img
+                          src="./img/teacher6.jpg"
+                          class="card-img-top"
+                          alt="teacher1"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Brandon White</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolorum!</p>
+                          <div class="d-flex fa-2x justify-content-around">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-instagram-square"></i>
+                            <i class="fa-brands fa-twitter-square"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                          </div>
+                        </div>
+                      </div>
+          
+                    </div>
+
+        </div>
+      </section>
+
+<!--******STUDENTS*******-->
+
+      <section id="students" class="container bg-light p-3">
+        <h2 class="display-6 text-success">OUR EMPLOYEES</h2>
+
+        <div class="row flex-wrap-reverse align-items-center">
+          <div class="col"><p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolorum eum qui. Voluptatum voluptatibus accusantium tempore ex voluptas consequatur quis.</p>
+            <button class="btn btn-success">Learn More</button></div>
+
+            <div class="col-md-6">
+              <img src="./img/students1.png "alt="students">
+            </div>
+
+          
+        </div>
+
+      </section>
+
+      <!--*****COURSES*******-->
+      <section id="courses" class="container bg-dark p-3">
+  <h2 class="display-6 text-success">COURSES</h2>
+</section>
+    </main>
 
     <script src="./lib/fslightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
